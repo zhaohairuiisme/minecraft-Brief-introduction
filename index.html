@@ -1,91 +1,129 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="zh-CN">
+
 <head>
-<title>star</title>
-<script type="text/javascript">
-window.onload = function () {
-C = Math.cos; // cache Math objects
-S = Math.sin;
-U = 0;
-w = window;
-j = document;
-d = j.getElementById("c");
-c = d.getContext("2d");
-W = d.width = w.innerWidth;
-H = d.height = w.innerHeight;
-c.fillRect(0, 0, W, H); // resize <canvas> and draw black rect (default)
-c.globalCompositeOperation = "lighter";  // switch to additive color application
-c.lineWidth = 0.2;
-c.lineCap = "round";
-var bool = 0, 
-t = 0; // theta
-d.onmousemove = function (e) {
-if(window.T) {
-if(D==9) { D=Math.random()*15; f(1); }
-clearTimeout(T);
-}
-X = e.pageX; // grab mouse pixel coords
-Y = e.pageY;
-a=0; // previous coord.x
-b=0; // previous coord.y 
-A = X, // original coord.x
-B = Y; // original coord.y
-R=(e.pageX/W * 999>>0)/999;
-r=(e.pageY/H * 999>>0)/999;
-U=e.pageX/H * 360 >>0;
-D=9;
-g = 360 * Math.PI / 180;
-T = setInterval(f = function (e) { // start looping spectrum
-c.save();
-c.globalCompositeOperation = "source-over"; // switch to additive color application
-if(e!=1) {
-c.fillStyle = "rgba(0,0,0,0.02)";
-c.fillRect(0, 0, W, H); // resize <canvas> and draw black rect (default)
-}
-c.restore();
-i = 25; while(i --) {
-c.beginPath();
-if(D > 450 || bool) { // decrease diameter
-if(!bool) { // has hit maximum
-bool = 1;
-}
-if(D < 0.1) { // has hit minimum
-bool = 0;
-}
-t -= g; // decrease theta
-D -= 0.1; // decrease size
-}
-if(!bool) {
-t += g; // increase theta
-D += 0.1; // increase size
-}
-q = (R / r - 1) * t; // create hypotrochoid from current mouse position, and setup variables (see: http://en.wikipedia.org/wiki/Hypotrochoid)
-x = (R - r) * C(t) + D * C(q) + (A + (X - A) * (i / 25)) + (r - R); // center on xy coords
-y = (R - r) * S(t) - D * S(q) + (B + (Y - B) * (i / 25));
-if (a) { // draw once two points are set
-c.moveTo(a, b);
-c.lineTo(x, y)
-}
-c.strokeStyle = "hsla(" + (U % 360) + ",100%,50%,0.75)"; // draw rainbow hypotrochoid
-c.stroke();
-a = x; // set previous coord.x
-b = y; // set previous coord.y
-}
-U -= 0.5; // increment hue
-A = X; // set original coord.x
-B = Y; // set original coord.y
-}, 16);
-}
-j.onkeydown = function(e) { a=b=0; R += 0.05 }
-d.onmousemove({pageX:300, pageY:290})
-}
- 
- 
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>推荐我的世界（Minecraft）</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+   .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+   .game-intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+   .game-intro img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+   .game-description {
+      width: 50%;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+   .features {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+   .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+   .feature-item img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
+   .cta-button {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+   .cta-button:hover {
+      background-color: #2ecc71;
+    }
+  </style>
 </head>
- 
-<body style="margin:0px;padding:0px;width:100%;height:100%;overflow:hidden;">
-<canvas id="c"></canvas>
+
+<body>
+  <header>
+    <h1>探索无限可能 - 我的世界（Minecraft）</h1>
+  </header>
+  <div class="container">
+    <div class="game-intro">
+      <img src="https://pic1.zhimg.com/v2-f77c8c8d86c8c6c975c8965675c86c99_r.jpg" alt="我的世界游戏画面">
+      <div class="game-description">
+        <p>《我的世界》（Minecraft）是一款具有开创性的沙盒游戏，由瑞典游戏设计师马库斯·佩尔松（Notch）开发，后由Mojang Studios维护与拓展。自2009年发布以来，这款游戏迅速在全球范围内走红，吸引了无数玩家沉浸其中。</p>
+        <p>游戏没有设定明确的目标和结局，而是给予玩家一个由方块构成的无限大的虚拟世界，让玩家凭借自己的想象力和创造力去探索、建造和冒险。在这里，你就是世界的主宰。</p>
+      </div>
+    </div>
+    <div class="features">
+      <h2>游戏特色</h2>
+      <div class="feature-item">
+        <img src="https://img0.baidu.com/it/u=3713302631,2220607071&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="自由建造图标">
+        <div>
+          <h3>自由建造</h3>
+          <p>玩家可以使用各种方块，随心所欲地建造任何建筑，从简单的木屋到宏伟的城堡，甚至是复杂的红石机械，一切皆有可能。</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="https://img2.baidu.com/it/u=3212706270,3636074346&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="探索冒险图标">
+        <div>
+          <h3>探索冒险</h3>
+          <p>游戏世界广阔无垠，充满了各种神秘的生物、地形和遗迹。玩家可以深入洞穴探险，穿越茂密的森林，挑战强大的怪物，展开一场又一场刺激的冒险。</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="https://img1.baidu.com/it/u=3714747218,2224632647&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="多人协作图标">
+        <div>
+          <h3>多人协作</h3>
+          <p>支持多人联机游玩，你可以和朋友们一起组队建造大型项目，共同探索世界，分享游戏中的欢乐与成就，增添社交乐趣。</p>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.minecraft.net/zh-hans" class="cta-button">立即体验</a>
+  </div>
 </body>
+
 </html>
- 
