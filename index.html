@@ -2,128 +2,211 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>推荐我的世界（Minecraft）</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推荐我的世界（Minecraft）</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-   .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+      .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    h1 {
-      color: #2c3e50;
-    }
+        h1 {
+            color: #2c3e50;
+        }
 
-   .game-intro {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-bottom: 20px;
-    }
+      .game-intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
 
-   .game-intro img {
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
+      .game-intro img {
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-   .game-description {
-      width: 50%;
-    }
+      .game-description {
+            width: 50%;
+        }
 
-    p {
-      line-height: 1.6;
-      color: #333;
-    }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
 
-   .features {
-      margin-top: 20px;
-      border-top: 1px solid #ccc;
-      padding-top: 20px;
-    }
+      .features {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
 
-   .feature-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
+      .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-   .feature-item img {
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
+      .feature-item img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
 
-   .cta-button {
-      display: inline-block;
-      background-color: #27ae60;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+      .cta-button {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
 
-   .cta-button:hover {
-      background-color: #2ecc71;
-    }
-  </style>
+      .cta-button:hover {
+            background-color: #2ecc71;
+        }
+
+      .shortcut-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+      .shortcut-table th,.shortcut-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>探索无限可能 - 我的世界（Minecraft）</h1>
-  </header>
-  <div class="container">
-    <div class="game-intro">
-      <img src="https://pic1.zhimg.com/v2-f77c8c8d86c8c6c975c8965675c86c99_r.jpg" alt="我的世界游戏画面">
-      <div class="game-description">
-        <p>《我的世界》（Minecraft）是一款具有开创性的沙盒游戏，由瑞典游戏设计师马库斯·佩尔松（Notch）开发，后由Mojang Studios维护与拓展。自2009年发布以来，这款游戏迅速在全球范围内走红，吸引了无数玩家沉浸其中。</p>
-        <p>游戏没有设定明确的目标和结局，而是给予玩家一个由方块构成的无限大的虚拟世界，让玩家凭借自己的想象力和创造力去探索、建造和冒险。在这里，你就是世界的主宰。</p>
-      </div>
+    <header>
+        <h1>探索无限可能 - 我的世界（Minecraft）</h1>
+    </header>
+    <div class="container">
+        <div class="game-intro">
+            <img src="https://pic1.zhimg.com/v2-f77c8c8d86c8c6c975c8965675c86c99_r.jpg" alt="我的世界游戏画面">
+            <div class="game-description">
+                <p>《我的世界》（Minecraft）是一款具有开创性的沙盒游戏，由瑞典游戏设计师马库斯·佩尔松（Notch）开发，后由Mojang Studios维护与拓展。自2009年发布以来，这款游戏迅速在全球范围内走红，吸引了无数玩家沉浸其中。</p>
+                <p>游戏没有设定明确的目标和结局，而是给予玩家一个由方块构成的无限大的虚拟世界，让玩家凭借自己的想象力和创造力去探索、建造和冒险。在这里，你就是世界的主宰。</p>
+            </div>
+        </div>
+        <div class="features">
+            <h2>游戏特色</h2>
+            <div class="feature-item">
+                <img src="https://img0.baidu.com/it/u=3713302631,2220607071&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="自由建造图标">
+                <div>
+                    <h3>自由建造</h3>
+                    <p>玩家可以使用各种方块，随心所欲地建造任何建筑，从简单的木屋到宏伟的城堡，甚至是复杂的红石机械，一切皆有可能。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="https://img2.baidu.com/it/u=3212706270,3636074346&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="探索冒险图标">
+                <div>
+                    <h3>探索冒险</h3>
+                    <p>游戏世界广阔无垠，充满了各种神秘的生物、地形和遗迹。玩家可以深入洞穴探险，穿越茂密的森林，挑战强大的怪物，展开一场又一场刺激的冒险。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="https://img1.baidu.com/it/u=3714747218,2224632647&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="多人协作图标">
+                <div>
+                    <h3>多人协作</h3>
+                    <p>支持多人联机游玩，你可以和朋友们一起组队建造大型项目，共同探索世界，分享游戏中的欢乐与成就，增添社交乐趣。</p>
+                </div>
+            </div>
+        </div>
+        <h2>快捷键介绍（以Java版为例）</h2>
+        <table class="shortcut-table">
+            <tr>
+                <th>功能</th>
+                <th>快捷键</th>
+            </tr>
+            <tr>
+                <td>打开/关闭物品栏</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>丢弃物品</td>
+                <td>Q</td>
+            </tr>
+            <tr>
+                <td>切换物品栏模式（生存/创造）</td>
+                <td>F3 + H（显示隐藏物品快捷方式相关）</td>
+            </tr>
+            <tr>
+                <td>切换视角</td>
+                <td>F5</td>
+            </tr>
+            <tr>
+                <td>保存并退出游戏</td>
+                <td>Esc</td>
+            </tr>
+            <tr>
+                <td>打开聊天框</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>打开命令方块界面</td>
+                <td>B（在已放置命令方块上操作）</td>
+            </tr>
+            <tr>
+                <td>快速切换物品</td>
+                <td>1 - 9（对应物品栏中的格子）</td>
+            </tr>
+            <tr>
+                <td>显示/隐藏鼠标指针</td>
+                <td>F1</td>
+            </tr>
+            <tr>
+                <td>显示坐标和调试信息</td>
+                <td>F3</td>
+            </tr>
+            <tr>
+                <td>切换飞行模式（创造模式）</td>
+                <td>空格（上升）、左Shift（下降）</td>
+            </tr>
+            <tr>
+                <td>攻击/使用物品</td>
+                <td>鼠标左键</td>
+            </tr>
+            <tr>
+                <td>放置物品/右键功能</td>
+                <td>鼠标右键</td>
+            </tr>
+            <tr>
+                <td>切换手持物品</td>
+                <td>鼠标滚轮</td>
+            </tr>
+            <tr>
+                <td>打开合成表</td>
+                <td>在工作台附近时，鼠标右键点击工作台；手持可合成物品时，按“R”键</td>
+            </tr>
+            <tr>
+                <td>快速吃食物</td>
+                <td>在饥饿状态下，按住鼠标右键</td>
+            </tr>
+        </table>
+        <a href="https://www.minecraft.net/zh-hans" class="cta-button">立即体验</a>
     </div>
-    <div class="features">
-      <h2>游戏特色</h2>
-      <div class="feature-item">
-        <img src="https://img0.baidu.com/it/u=3713302631,2220607071&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="自由建造图标">
-        <div>
-          <h3>自由建造</h3>
-          <p>玩家可以使用各种方块，随心所欲地建造任何建筑，从简单的木屋到宏伟的城堡，甚至是复杂的红石机械，一切皆有可能。</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="https://img2.baidu.com/it/u=3212706270,3636074346&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="探索冒险图标">
-        <div>
-          <h3>探索冒险</h3>
-          <p>游戏世界广阔无垠，充满了各种神秘的生物、地形和遗迹。玩家可以深入洞穴探险，穿越茂密的森林，挑战强大的怪物，展开一场又一场刺激的冒险。</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="https://img1.baidu.com/it/u=3714747218,2224632647&fm=26&fmt=auto&app=138&f=JPEG?w=500&h=375" alt="多人协作图标">
-        <div>
-          <h3>多人协作</h3>
-          <p>支持多人联机游玩，你可以和朋友们一起组队建造大型项目，共同探索世界，分享游戏中的欢乐与成就，增添社交乐趣。</p>
-        </div>
-      </div>
-    </div>
-    <a href="https://www.minecraft.net/zh-hans" class="cta-button">立即体验</a>
-  </div>
 </body>
 
 </html>
