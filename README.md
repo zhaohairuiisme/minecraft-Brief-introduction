@@ -1,7 +1,9 @@
 # Welcome to the minecraft-Brief-introduction!
 
 ***
-If you want to clone the repository,you can Enter the code:`git clone https://gitclone.com/github.com/zhaohairuiisme/minecraft-Brief-introduction.git`.
+If you want to clone the repository,you can Enter this code:
+
+`git clone https://gitclone.com/github.com/zhaohairuiisme/minecraft-Brief-introduction.git`.
 
 ***
 This repository is the source code of my website,you can click on the link to go to my website [click me to go to the website](https://zhaohairuiisme.github.io/minecraft-Brief-introduction/)
